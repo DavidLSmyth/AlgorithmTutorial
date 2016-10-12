@@ -1,32 +1,22 @@
 <h1>Listing algorithms</h1>
 
 <table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Link</th>
-      <th>Pseudocode</th>
-      <th>Complexityanalysis</th>
-      <th>Difficulty</th>
-      <th>Author</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
   <tbody>
     <% @algorithms.each do |algorithm| %>
       <tr>
         <td><%= algorithm.name %></td>
-        <td><%= algorithm.description %></td>
+        <td><%= algorithm.description[0...100] %>...</td>
         <td><%= algorithm.link %></td>
-        <td><%= algorithm.pseudoCode %></td>
-        <td><%= algorithm.complexityAnalysis %></td>
+        <td><%= algorithm.pseudoCode[0...100] %>...</td>
+        <td><%= algorithm.complexityAnalysis[0...100] %>...</td>
         <td><%= algorithm.difficulty %></td>
         <td><%= algorithm.author %></td>
-        <td><%= link_to 'Show', algorithm %></td>
-        <td><%= link_to 'Edit', edit_algorithm_path(algorithm) %></td>
-        <td><%= link_to 'Destroy', algorithm, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class='list_actions'>
+  			<%= link_to 'Show', algorithm %><br/>
+  			<%= link_to 'Edit', edit_algorithm_path(algorithm) %><br/>
+  			<%= link_to 'Destroy', algorithm, method: :delete, 
+      	data: { confirm: 'Are you sure?' } %>
+</td>
       </tr>
     <% end %>
   </tbody>
