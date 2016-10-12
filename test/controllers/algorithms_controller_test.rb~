@@ -18,7 +18,7 @@ class AlgorithmsControllerTest < ActionController::TestCase
 
   test "should create algorithm" do
     assert_difference('Algorithm.count') do
-      post :create, algorithm: { author: @algorithm.author, complexityAnalysis: @algorithm.complexityAnalysis, description: @algorithm.description, difficulty: @algorithm.difficulty, link: @algorithm.link, name: "Algorithm 2", pseudoCode: @algorithm.pseudoCode }
+      post :create, algorithm: { author: @algorithm.author, complexityAnalysis: @algorithm.complexityAnalysis, description: @algorithm.description, difficulty: @algorithm.difficulty, link: @algorithm.link, name: "Algorithm 1", pseudoCode: @algorithm.pseudoCode }
     end
 
     assert_redirected_to algorithm_path(assigns(:algorithm))
