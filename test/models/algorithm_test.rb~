@@ -39,9 +39,8 @@ class AlgorithmTest < ActiveSupport::TestCase
     algorithm.link= url	
 		puts "The link is: "
 		puts algorithm.inspect
-		algorithm.valid?
-		puts algorithm.errors.inspect
-    assert algorithm.valid?, "#{url} should be a valid image url" 
+    assert algorithm.valid?, "#{url} should be a valid image url"
+		puts algorithm.errors.inspect 
   end
 
   bad.each do |url|

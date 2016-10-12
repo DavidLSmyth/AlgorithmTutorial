@@ -56,9 +56,9 @@
 <h2>
   <strong><center>Complexity Analysis:</center></strong>
 </h2>
-<code>
+<pre>
   <%= @algorithm.complexityAnalysis %>
-</code>
+</pre>
 
 
 <h3>

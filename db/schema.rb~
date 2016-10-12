@@ -15,7 +15,6 @@ ActiveRecord::Schema.define(version: 20161012115152) do
 
   create_table "algorithms", force: true do |t|
     t.string   "name"
-    t.text     "purpose"
     t.text     "description"
     t.string   "link"
     t.text     "pseudoCode"
@@ -24,6 +23,7 @@ ActiveRecord::Schema.define(version: 20161012115152) do
     t.string   "author"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "purpose"
   end
 
 end

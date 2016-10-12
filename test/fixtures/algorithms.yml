@@ -6,7 +6,7 @@ one:
   link: MyText1.jpg
   pseudoCode: MyText1
   complexityAnalysis: MyText1
-  difficulty: 1
+  difficulty: 1.5
   author: MyString1
 
 two:
@@ -18,4 +18,12 @@ two:
   difficulty: 3
   author: MyString2
 
+binsearch:
+  name: binarySearchAlgo
+  description: searchesForValinList
+  link: MyText.png
+  pseudoCode: defSearch
+  complexityAnalysis: O(N)
+  difficulty: 3
+  author: David
 

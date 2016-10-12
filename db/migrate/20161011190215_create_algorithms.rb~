@@ -3,12 +3,12 @@ class CreateAlgorithms < ActiveRecord::Migration
     create_table :algorithms do |t|
       t.string :name
       t.text :description
-      t.String :link
+      t.string :link
       t.text :pseudoCode
       t.text :complexityAnalysis
       t.integer :difficulty
       t.string :author
-
+	  t.string :purpose
       t.timestamps
     end
   end

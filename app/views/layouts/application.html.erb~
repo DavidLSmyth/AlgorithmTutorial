@@ -6,9 +6,33 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-
+<body>
 <%= content_tag :body, class: controller.controller_name do %>
-  <%= yield %>
-<% end %>
+		<div id="banner">
+			<img src="<%= image_tag("Cog.jpg") %>" alt="Smiley face" height="400" width="400">
 
+			<%= @page_title || "AlgoLibrary" %>
+		</div>
+		<div id="columns">
+		<div id="side">
+		<ul>
+			<li><a href="http://www....">Home</a></li>
+			<li><a href="http://www..../faq">Questions</a></li>
+			<li><a href="http://www..../news">News</a></li>
+			<li><a href="http://www..../contact">Contact</a></li>
+		</ul>
+		<span id='DateTime' class="nowrap">The time is:
+			<%= Time.now.strftime("%H:%M") %>
+		</span>
+	<span id='DateTime' class="nowrap">The date is: 
+		<%= Time.now.strftime("%d/%m/%Y") %>
+	</span>
+  </div>
+  <div id="main">
+    <%= yield %>
+  </div>
+</div>
+<% end %>
+</body>
 </html>
+

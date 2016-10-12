@@ -23,7 +23,7 @@
   font: bold smaller sans-serif;
 }
 #columns {
-  background: #FF6666;
+  background: #CC0000;
 
   #main {
     margin-left: 19em;
@@ -35,7 +35,7 @@
     float: left;
     padding: 1em 2em;
     width: 13em;
-    background: #FF6666;
+    background: #CC0000;
     color: white;
 	#DateTime {
 		font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;

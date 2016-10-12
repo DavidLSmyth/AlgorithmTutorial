@@ -1,16 +1,36 @@
 <h1>Listing algorithms</h1>
+<style>
+table {
+  border-collapse: collapse;
+}
+table tr, table th {
+  border: 1px solid black;
+}
+table td{
+  border: 0.5px solid grey;
+}
 
+</style>
 <table>
+	<th>Name</th>
+    <th>Purpose</th> 
+    <th>Description</th>	
+	<th>Link</th>
+    <th>Code</th> 
+    <th>Complexity Analysis</th>
+	<th>Difficulty</th>
+    <th>Author</th>     
   <tbody>
     <% @algorithms.each do |algorithm| %>
       <tr>
-        <td><%= algorithm.name %></td>
-        <td><%= algorithm.description[0...100] %>...</td>
-        <td><%= algorithm.link %></td>
-        <td><%= algorithm.pseudoCode %></td>
-        <td><%= algorithm.complexityAnalysis %></td>
-        <td><%= algorithm.difficulty %></td>
-        <td><%= algorithm.author %></td>
+        <td class="border_bottom"><%= algorithm.name %></td>
+		<td class="border_bottom"><%= algorithm.purpose %></td>
+        <td class="border_bottom"><%= algorithm.description[0...100] %>...</td>
+        <td class="border_bottom"><%= algorithm.link %></td>
+        <td class="border_bottom"><%= algorithm.pseudoCode[0...100] %>...</td>
+        <td class="border_bottom"><%= algorithm.complexityAnalysis[0...100] %>...</td>
+        <td class="border_bottom"><%= algorithm.difficulty %></td>
+        <td class="border_bottom"><%= algorithm.author %></td>
         <td class='list_actions'>
   			<%= link_to 'Show', algorithm %><br/>
   			<%= link_to 'Edit', edit_algorithm_path(algorithm) %><br/>
