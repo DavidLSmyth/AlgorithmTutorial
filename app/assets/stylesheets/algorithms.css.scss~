@@ -23,7 +23,7 @@
   font: bold smaller sans-serif;
 }
 #columns {
-  background: #CC0000;
+  background: #FF6666;
 
   #main {
     margin-left: 19em;
@@ -35,7 +35,7 @@
     float: left;
     padding: 1em 2em;
     width: 13em;
-    background: #CC0000;
+    background: #FF6666;
     color: white;
 	#DateTime {
 		font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;
@@ -62,4 +62,14 @@
 #code{
 background: grey
 }
+span.italic {
+    font-style: italic;
+	font-size: 16px;
+	text-align: center;	
+	color: grey;
+}
+h1,h2, h3, h4, h5, h6 {
+color: blue;
+}
+
 

@@ -25,7 +25,6 @@ class AlgorithmsController < ApplicationController
   # POST /algorithms.json
   def create
     @algorithm = Algorithm.new(algorithm_params)
-
     respond_to do |format|
       if @algorithm.save
         format.html { redirect_to @algorithm, notice: 'Algorithm was successfully created.' }

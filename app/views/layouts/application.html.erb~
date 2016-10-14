@@ -9,8 +9,6 @@
 <body>
 <%= content_tag :body, class: controller.controller_name do %>
 		<div id="banner">
-			<img src="<%= image_tag("Cog.jpg") %>" alt="Smiley face" height="400" width="400">
-
 			<%= @page_title || "AlgoLibrary" %>
 		</div>
 		<div id="columns">

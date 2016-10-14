@@ -1,11 +1,16 @@
 <head>
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
-   <style>
+<style>
      h1 {
       font-family: 'Roboto', serif;
       font-size: 48px;
      }
+	span.fancy {
+    color: red;
+		font-family: 'Tangerine';
+		font-size: 30px;
+}
 
 </style>
 </head>
@@ -18,11 +23,12 @@
 
 
 <h2>
-  <strong><center>Purpose:</center></strong>
+  <strong>Purpose:</strong>
+	<span class='italic'>
+		<%= @algorithm.purpose %>
+	</span>
 </h2>
-<p>
-  <%= @algorithm.purpose %>
-</p>
+
 
 
 <h2>
@@ -32,10 +38,6 @@
   <%= @algorithm.description %>
 </p>
 
-
-<h3>
-  <strong>Link:</strong>
-</h3>
 <p>
 <center>
 <img src=<%= @algorithm.link %> alt="Smiley face" height="400" width="400">
@@ -56,9 +58,9 @@
 <h2>
   <strong><center>Complexity Analysis:</center></strong>
 </h2>
-<pre>
+<code>
   <%= @algorithm.complexityAnalysis %>
-</pre>
+</code>
 
 
 <h3>
@@ -68,10 +70,13 @@
   <%= @algorithm.difficulty %>
 </p>
 
-<p>
+<h3>
   <strong>Author:</strong>
-  <%= @algorithm.author %>
-</p>
+	<span class='fancy'>
+		<%= @algorithm.author %>
+	</span>
+</h3>
+
 
 <%= link_to 'Edit', edit_algorithm_path(@algorithm) %> |
 <%= link_to 'Back', algorithms_path %>

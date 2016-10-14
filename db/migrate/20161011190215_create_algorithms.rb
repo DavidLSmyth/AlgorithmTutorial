@@ -2,7 +2,7 @@ class CreateAlgorithms < ActiveRecord::Migration
   def change
     create_table :algorithms do |t|
       t.string :name
-	  t.string :purpose
+	    t.string :purpose
       t.text :description
       t.string :link
       t.text :pseudoCode
