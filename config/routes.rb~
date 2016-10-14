@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   resources :algorithms
 
-  root :to => 'algorithm#home', :as => 'home'
+  root :to => 'algorithm#index', :as => 'index'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

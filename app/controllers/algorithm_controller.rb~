@@ -1,5 +1,5 @@
 class AlgorithmController < ApplicationController
   def index
-    @algorithm = Algorithm.order(:title)
+    @algorithm = Algorithm.order(:name)
   end
 end

@@ -1,10 +1,6 @@
 Rails.application.routes.draw do
   get 'algorithm/index'
 
-  get 'homepage/home'
-
-  get 'home/index'
-
   get 'algorithms/index'
 
   resources :algorithms
