@@ -1,7 +1,15 @@
 Rails.application.routes.draw do
+  get 'algorithm/index'
+
+  get 'homepage/home'
+
+  get 'home/index'
+
   get 'algorithms/index'
 
   resources :algorithms
+
+  root :to => 'algorithm#index', :as => 'index'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
