@@ -4,10 +4,29 @@
 
 <h1><center>Algorithm Listing</center></h1>
 
-<% @algorithm.each do |alg| %>
+<% @algorithms.each do |alg| %>
     <br>
-    <h2><%= link_to alg.name, @alg %></h2>
+		<center>
+    <h2><%= link_to alg.name, alg %></h2>
     <%= sanitize alg.purpose %>
     <h3> Difficulty: <span><%= alg.difficulty %></span></h3>
+		</center>
     </br>
+<% end %>
+
+
+<% if @searchval.blank? %>
+	<center>Search found no matches</center>
+<% else %>
+   <% if @algorithm==[] %>
+     No results for you
+     <% else %>
+       <ul>
+       <% @algorithms.each do |algo| %>
+         <li class="box round">
+           <%= algo.name %></br>
+         </li>
+       <% end %>
+       </ul>
+<% end %>
 <% end %>

@@ -1,0 +1,131 @@
+/* line 5, /home/user15/RubyFiles/AlgorithmTutorial/app/assets/stylesheets/algorithms.css.scss */
+#banner {
+  background: #FFB2B2;
+  padding: 20px;
+  border-bottom: 3px solid;
+  border-left: 3px solid;
+  border-right: 3px solid;
+  font: small-caps 40px/40px "Times New Roman", serif;
+  color: #282;
+  text-align: center;
+  max-width: 1200px;
+  max-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 18, /home/user15/RubyFiles/AlgorithmTutorial/app/assets/stylesheets/algorithms.css.scss */
+#banner img {
+  float: left;
+}
+
+/* line 24, /home/user15/RubyFiles/AlgorithmTutorial/app/assets/stylesheets/algorithms.css.scss */
+#nav #ul {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
+/* line 30, /home/user15/RubyFiles/AlgorithmTutorial/app/assets/stylesheets/algorithms.css.scss */
+#notice {
+  color: #000 !important;
+  border: 2px solid red;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: #f0f0f0;
+  font: bold smaller sans-serif;
+}
+
+/* line 38, /home/user15/RubyFiles/AlgorithmTutorial/app/assets/stylesheets/algorithms.css.scss */
+#columns {
+  background: #93dbfc;
+}
+/* line 41, /home/user15/RubyFiles/AlgorithmTutorial/app/assets/stylesheets/algorithms.css.scss */
+#columns #main {
+  margin-left: 19em;
+  padding: 1em;
+  background: lightblue;
+}
+/* line 47, /home/user15/RubyFiles/AlgorithmTutorial/app/assets/stylesheets/algorithms.css.scss */
+#columns #side {
+  float: left;
+  padding: 1em 2em;
+  width: 13em;
+  background: #93dbfc;
+  color: 282;
+}
+/* line 53, /home/user15/RubyFiles/AlgorithmTutorial/app/assets/stylesheets/algorithms.css.scss */
+#columns #side #DateTime {
+  font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+  white-space: nowrap;
+}
+/* line 62, /home/user15/RubyFiles/AlgorithmTutorial/app/assets/stylesheets/algorithms.css.scss */
+#columns #side ul {
+  padding: 0;
+}
+/* line 64, /home/user15/RubyFiles/AlgorithmTutorial/app/assets/stylesheets/algorithms.css.scss */
+#columns #side ul li {
+  list-style: none;
+}
+/* line 66, /home/user15/RubyFiles/AlgorithmTutorial/app/assets/stylesheets/algorithms.css.scss */
+#columns #side ul li a {
+  color: #282;
+  font-size: small;
+}
+
+/* line 75, /home/user15/RubyFiles/AlgorithmTutorial/app/assets/stylesheets/algorithms.css.scss */
+#code {
+  background: grey;
+}
+
+/* line 78, /home/user15/RubyFiles/AlgorithmTutorial/app/assets/stylesheets/algorithms.css.scss */
+span.italic {
+  font-style: italic;
+  font-size: 16px;
+  text-align: center;
+  color: grey;
+}
+
+/* line 84, /home/user15/RubyFiles/AlgorithmTutorial/app/assets/stylesheets/algorithms.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #111369;
+}
+
+/* line 88, /home/user15/RubyFiles/AlgorithmTutorial/app/assets/stylesheets/algorithms.css.scss */
+#navigationbar {
+  text-align: center;
+}
+/* line 90, /home/user15/RubyFiles/AlgorithmTutorial/app/assets/stylesheets/algorithms.css.scss */
+#navigationbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightgrey;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 25px;
+  color: white;
+}
+/* line 102, /home/user15/RubyFiles/AlgorithmTutorial/app/assets/stylesheets/algorithms.css.scss */
+#navigationbar li {
+  font: small-caps 20px/20px "Times New Roman", serif;
+  color: white;
+  display: inline;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* line 110, /home/user15/RubyFiles/AlgorithmTutorial/app/assets/stylesheets/algorithms.css.scss */
+#navigationbar li :hover:not(.active) {
+  background-color: #111;
+}
+/* line 114, /home/user15/RubyFiles/AlgorithmTutorial/app/assets/stylesheets/algorithms.css.scss */
+#navigationbar .active {
+  background-color: #4CAF50;
+}

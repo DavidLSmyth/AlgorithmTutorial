@@ -7,4 +7,7 @@ class Algorithm < ActiveRecord::Base
   		with: %r{\.(gif|jpg|png|jpeg)\Z}i,
   		message: 'must be a URL for GIF, JPG or dirPNG image.'
 	}
+	def self.searchbar(search)
+		where("name LIKE ? or description LIKE ?", "%#{search}%","%#{search}%") 
+	end
 end

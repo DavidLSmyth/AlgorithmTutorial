@@ -8,24 +8,33 @@
 </head>
 <body>
 <%= content_tag :body, class: controller.controller_name do %>
-		<div id="banner">
+		<div id="banner" style="height:60px;">
 			<%= @page_title || "BlackBored" %>
-		</div>
-		<div id="columns">
-		<div id="side">
-		<ul>
-			<li><%= link_to 'Algorithms Index', index_path %></li>
-			<li><a href="http://www..../faq">Questions</a></li>
-			<li><a href="http://www..../news">News</a></li>
-			<li><a href="http://www..../contact">Contact</a></li>
-		</ul>
-		<span id='DateTime' class="nowrap">The time is:
-			<%= Time.now.strftime("%H:%M") %>
-		</span>
-	<span id='DateTime' class="nowrap">The date is: 
-		<%= Time.now.strftime("%d/%m/%Y") %>
-	</span>
-  </div>
+			<%= image_tag "Cog.jpg", :size => "60x60" %>
+<!--
+			<p>
+			<%= link_to "Home", home_link_home_path, class: 'button' %>	
+			</p>
+--></div>
+      <div>
+        <nav id="navigationbar">
+          <ul>
+						<li><%= link_to 'Home', home_path %></li>
+            <li><%= link_to 'Algorithms Index', index_path %></li>
+            <li><%= link_to "Edit Algorithms", algorithms_path %></li>
+            <li><%= link_to "Log in", '#' %></li>
+          </ul>
+						<%= form_tag(index_path, :method => "get", id: "search-form") do %>
+						<%= text_field_tag :search, params[:search], placeholder: "Search Algorithms" %>
+						<%= submit_tag "Search" %>
+						<% end %>
+
+        </nav>
+			</div>
+<!--add some style here, possibly-->
+
+   
+
   <div id="main">
     <%= yield %>
   </div>

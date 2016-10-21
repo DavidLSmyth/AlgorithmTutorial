@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-#navbar{
+.navbar{
 	ul {
 	    list-style-type: none;
 	    margin: 0;

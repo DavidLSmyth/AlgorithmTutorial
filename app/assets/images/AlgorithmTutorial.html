@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  
+  <link data-turbolinks-track="true" href="AlgorithmTutorial_files/algorithm.css" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="AlgorithmTutorial_files/algorithms.css" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="AlgorithmTutorial_files/home_link.css" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="AlgorithmTutorial_files/homes.css" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="AlgorithmTutorial_files/scaffolds.css" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="AlgorithmTutorial_files/application.css" media="all" rel="stylesheet">
+  <script data-turbolinks-track="true" src="AlgorithmTutorial_files/jquery.js"></script>
+<script data-turbolinks-track="true" src="AlgorithmTutorial_files/jquery_ujs.js"></script>
+<script data-turbolinks-track="true" src="AlgorithmTutorial_files/turbolinks.js"></script>
+<script data-turbolinks-track="true" src="AlgorithmTutorial_files/algorithm.js"></script>
+<script data-turbolinks-track="true" src="AlgorithmTutorial_files/algorithms.js"></script>
+<script data-turbolinks-track="true" src="AlgorithmTutorial_files/home_link.js"></script>
+<script data-turbolinks-track="true" src="AlgorithmTutorial_files/homes.js"></script>
+<script data-turbolinks-track="true" src="AlgorithmTutorial_files/application.js"></script>
+  
+
+<title>AlgorithmTutorial</title><meta content="authenticity_token" name="csrf-param"><meta content="BalE2e8GZI5mi4bI8eyuK5CxS6l5R1wHEmFseIsgTS0=" name="csrf-token"></head>
+<body class="algorithms">
+
+		<div id="banner" style="height:60px;">
+			BlackBored
+			<img alt="Cog" src="AlgorithmTutorial_files/Cog.jpg" width="60" height="60">
+<!--
+			<p>
+			<a class="button" href="/home_link/home">Home</a>	
+			</p>
+--></div>
+      <div>
+        <nav id="navigationbar">
+          <ul>
+						<li><a href="http://127.0.0.1:3000/home">Home</a></li>
+            <li><a href="http://127.0.0.1:3000/">Algorithms Index</a></li>
+            <li><a href="http://127.0.0.1:3000/algorithms">Edit Algorithms</a></li>
+            <li><a href="#">Log in</a></li>
+          </ul>
+        </nav>
+			</div>
+		
+
+
+
+<!--
+		<div id="rows">
+		<div id="top">
+		<ul>
+			<li><a href="/">Algorithms Index</a></li>
+			<li><a href="http://www..../faq">Questions</a></li>
+			<li><a href="http://www..../news">News</a></li>
+			<li><a href="http://www..../contact">Contact</a></li>
+		</ul>
+		<span id='DateTime' class="nowrap">The time is:
+			21:18
+		</span>
+	<span id='DateTime' class="nowrap">The date is: 
+		19/10/2016
+	</span>
+  </div>
+-->
+<!--add some style here, possibly-->
+
+   
+
+  <div id="main">
+    <h1>Editing algorithm</h1>
+
+<form accept-charset="UTF-8" action="/algorithms/3" class="edit_algorithm" id="edit_algorithm_3" method="post"><div style="display:none"><input name="utf8" value="✓" type="hidden"><input name="_method" value="patch" type="hidden"><input name="authenticity_token" value="BalE2e8GZI5mi4bI8eyuK5CxS6l5R1wHEmFseIsgTS0=" type="hidden"></div>
+
+  <div class="field">
+    <label for="algorithm_name">Name</label><br>
+    <input id="algorithm_name" name="algorithm[name]" value="Quick Sort" type="text">
+  </div>
+
+	<div class="field">
+    <label for="algorithm_purpose">Purpose</label><br>
+    <input value="Sorts a list of underordered elements" id="algorithm_purpose" name="algorithm[purpose]" type="text">
+  </div>
+
+  <div class="field">
+    <label for="algorithm_description">Description</label><br>
+    <textarea style="width: 643px; height: 133px;" id="algorithm_description" name="algorithm[description]">Similar
+ to merge sort. Quick sort works by taking an element and then putting 
+all elements less than it in a 'left' sublist, and all elements greater 
+than it in a 'right' sublist. This breaks the original list down 
+recursively until each list is of length one, when the recursion 
+rebuilds these lists to a sorted list.</textarea>
+  </div>
+  <div class="field">
+    <label for="algorithm_link">Link</label><br>
+    <input id="algorithm_link" name="algorithm[link]" value="adf.gif" type="text">
+  </div>
+  <div class="field">
+    <label for="algorithm_pseudoCode">Pseudocode</label><br>
+    <textarea id="algorithm_pseudoCode" name="algorithm[pseudoCode]">adf</textarea>
+  </div>
+  <div class="field">
+    <label for="algorithm_complexityAnalysis">Complexityanalysis</label><br>
+    <textarea id="algorithm_complexityAnalysis" name="algorithm[complexityAnalysis]">daf</textarea>
+  </div>
+  <div class="field">
+    <label for="algorithm_difficulty">Difficulty</label><br>
+    <input id="algorithm_difficulty" name="algorithm[difficulty]" value="2" type="number">
+  </div>
+  <div class="field">
+    <label for="algorithm_author">Author</label><br>
+    <input id="algorithm_author" name="algorithm[author]" value="daf" type="text">
+  </div>
+  <div class="actions">
+    <input name="commit" value="Update Algorithm" type="submit">
+  </div>
+</form>
+
+<a href="http://127.0.0.1:3000/algorithms/3">Show</a> |
+<a href="http://127.0.0.1:3000/algorithms">Back</a>
+
+  </div>
+
+
+
+
+</body></html>

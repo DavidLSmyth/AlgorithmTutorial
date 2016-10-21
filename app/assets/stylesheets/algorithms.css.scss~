@@ -4,15 +4,28 @@
 
 #banner {
   background: #FFB2B2;
-  padding: 10px;
-  border-bottom: 2px solid;
+  padding: 20px;
+  border-bottom: 3px solid;
+	border-left: 3px solid;
+	border-right: 3px solid;
   font: small-caps 40px/40px "Times New Roman", serif;
   color: #282;
   text-align: center;
-
+  max-width: 1200px;
+  max-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
   img {
     float: left;
   }
+}
+
+#nav{
+	#ul{
+		display: inline-block;
+		*display: inline;
+		zoom: 1
+	}
 }
 #notice {
   color: #000 !important;
@@ -23,20 +36,20 @@
   font: bold smaller sans-serif;
 }
 #columns {
-  background: #FF6666;
+  background: #93dbfc;
 
-  #main {
+  #main { 
     margin-left: 19em;
     padding: 1em;
-    background: white;
+    background: lightblue;
   }
 
   #side {
     float: left;
     padding: 1em 2em;
     width: 13em;
-    background: #FF6666;
-    color: white;
+    background: #93dbfc;
+    color: 282;
 	#DateTime {
 		font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;
 		font-size: 14px;
@@ -51,7 +64,7 @@
       li {
         list-style: none;
         a {
-          color: #bfb;
+          color: #282;
 	  font-size: small;
 	}
       }
@@ -60,7 +73,7 @@
 }
 
 #code{
-background: grey
+	background: grey
 }
 span.italic {
     font-style: italic;
@@ -69,7 +82,39 @@ span.italic {
 	color: grey;
 }
 h1,h2, h3, h4, h5, h6 {
-color: blue;
+color: #111369;
 }
+
+#navigationbar{
+	text-align: center;
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: g;
+    position: fixed;
+    top: 0;
+    width: 100%;
+		height: 25px;
+		color: white;
+	}
+	li {
+			font: small-caps 20px/20px "Times New Roman", serif;
+			color: white;
+		  display: inline;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+	}
+	li :hover:not(.active) {
+		  background-color: #111;
+	}
+
+	.active {
+		  background-color: #4CAF50;
+	}
+}
+
 
 

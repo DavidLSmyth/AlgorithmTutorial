@@ -1,0 +1,2 @@
+module HomeLinkHelper
+end

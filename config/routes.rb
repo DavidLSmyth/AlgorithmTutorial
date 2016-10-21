@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'home_link/home'
+
   get 'algorithm/index'
 
   get 'algorithms/index'
@@ -6,6 +8,7 @@ Rails.application.routes.draw do
   resources :algorithms
 
   root :to => 'algorithm#index', :as => 'index'
+	get "home" => "home_link#home"
 
 
   # The priority is based upon order of creation: first created -> highest priority.
