@@ -6,10 +6,8 @@ class AlgorithmController < ApplicationController
     else
       empty_search = true
     end
-
     if empty_search
      @algorithms=Algorithm.all
-
     else
      # a search was submitted
      @searchval = Algorithm.searchbar(params[:search])

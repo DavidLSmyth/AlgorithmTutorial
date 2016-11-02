@@ -8,9 +8,7 @@ class AlgorithmController < ApplicationController
     end
 
     if empty_search
-     # no search was submitted, or search params are all blank
-     @searchval = ""
-     @algorithms = []
+     @algorithms=Algorithm.all
 
     else
      # a search was submitted

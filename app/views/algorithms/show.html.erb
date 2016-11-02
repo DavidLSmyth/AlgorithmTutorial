@@ -1,6 +1,9 @@
 <head>
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/default.min.css">
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
 <style>
      h1 {
       font-family: 'Roboto', serif;
@@ -21,13 +24,18 @@
   <h1><center><%= @algorithm.name %></center></h1>
 </p>
 
-
+<br>
+</br>
+<center>
 <h2>
   <strong>Purpose:</strong>
 	<span class='italic'>
 		<%= @algorithm.purpose %>
 	</span>
 </h2>
+</center>
+<br>
+</br>
 
 
 
@@ -35,7 +43,12 @@
   <strong><center>Description:</center></strong>
 </h2>
 <p>
+
+<pre class="description">
   <%= @algorithm.description %>
+</pre>
+
+
 </p>
 
 <p>
@@ -48,7 +61,7 @@
 <h2>
   <strong><center>Pseudocode:</center></strong>
 </h2>
-<pre>
+<pre class="prettyprint">
 <code>
   <%= @algorithm.pseudoCode %>
 </code>
@@ -64,11 +77,9 @@
 
 
 <h3>
-  <strong>Difficulty:</strong>
+  <strong>Difficulty: </strong><%= @algorithm.difficulty %>
 </h3>
-<p>
-  <%= @algorithm.difficulty %>
-</p>
+
 
 <h3>
   <strong>Author:</strong>

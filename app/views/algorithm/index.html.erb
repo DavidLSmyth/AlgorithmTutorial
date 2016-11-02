@@ -1,20 +1,15 @@
-<% if notice %>
-  <p id="notice"><%= notice %></p>
-<% end %>
-
 <h1><center>Algorithm Listing</center></h1>
-
-<% @algorithms.each do |alg| %>
-    <br>
-		<center>
-    <h2><%= link_to alg.name, alg %></h2>
-    <%= sanitize alg.purpose %>
-    <h3> Difficulty: <span><%= alg.difficulty %></span></h3>
-		</center>
-    </br>
+<% if @algorithms.empty? %>
+	<center>No algorithms matched your search</center>
+<% else %>
+	<% @algorithms.each do |alg| %>
+		  <br>
+			<center>
+		  <h2><%= link_to alg.name, alg %></h2>
+		  <%= sanitize alg.purpose %>
+		  <h3> Difficulty: <span><%= alg.difficulty %></span></h3>
+			</center>
+		  </br>
+	<% end %>
 <% end %>
 
-
-<% if @searchval.blank? %>
-	<center>Search found no matches</center>
-<% end %>
