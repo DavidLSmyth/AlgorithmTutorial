@@ -1,4 +1,5 @@
 class Algorithm < ActiveRecord::Base
+  acts_as_taggable
 	validates :name, :description, :link, :author, presence: true
 	#ensure each algorithm has a unique name
 	validates :name, uniqueness: true
@@ -8,6 +9,6 @@ class Algorithm < ActiveRecord::Base
   		message: 'must be a URL for GIF, JPG or dirPNG image.'
 	}
 	def self.searchbar(search)
-		where("name LIKE ? or description LIKE ?", "%#{search}%","%#{search}%") 
+		where("name LIKE ?", "%#{search}%") 
 	end
 end

@@ -1,3 +1,4 @@
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 <h1>Listing algorithms</h1>
 <style>
 table {
@@ -29,6 +30,8 @@ table tr, table th {
         <td class="border_bottom"><%= algorithm.complexityAnalysis[0...100] %>...</td>
         <td class="border_bottom"><%= algorithm.difficulty %></td>
         <td class="border_bottom"><%= algorithm.author %></td>
+	<h1>Posts</h1>
+	<%= render @posts %>
         <td class='list_actions'>
   			<%= link_to 'Show', algorithm %><br/>
   			<%= link_to 'Edit', edit_algorithm_path(algorithm) %><br/>

@@ -1,0 +1,3 @@
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+<h4 class=tag><%= link_to algorithm.name, algorithm_path(algorithm) %></h4>
+

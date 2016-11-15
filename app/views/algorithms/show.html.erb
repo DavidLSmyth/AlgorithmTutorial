@@ -71,14 +71,15 @@
 <h2>
   <strong><center>Complexity Analysis:</center></strong>
 </h2>
-<code>
+<pre>
   <%= @algorithm.complexityAnalysis %>
-</code>
+</pre>
 
 
 <h3>
   <strong>Difficulty: </strong><%= @algorithm.difficulty %>
 </h3>
+
 
 
 <h3>
@@ -87,7 +88,8 @@
 		<%= @algorithm.author %>
 	</span>
 </h3>
+<div><%= render @algorithm.tags %></div>
 
 
-<%= link_to 'Edit', edit_algorithm_path(@algorithm) %> |
+<%= link_to 'Edit', edit_algorithm_path(@algorithm) %>
 <%= link_to 'Back', algorithms_path %>

@@ -30,6 +30,8 @@ table tr, table th {
         <td class="border_bottom"><%= algorithm.complexityAnalysis[0...100] %>...</td>
         <td class="border_bottom"><%= algorithm.difficulty %></td>
         <td class="border_bottom"><%= algorithm.author %></td>
+	<h1>Algorithms</h1>
+	<%= render @algorithms %>
         <td class='list_actions'>
   			<%= link_to 'Show', algorithm %><br/>
   			<%= link_to 'Edit', edit_algorithm_path(algorithm) %><br/>

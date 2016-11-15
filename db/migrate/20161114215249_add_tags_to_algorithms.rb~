@@ -1,0 +1,4 @@
+class AddTagsToAlgorithms < ActiveRecord::Migration
+  def change
+  end
+end

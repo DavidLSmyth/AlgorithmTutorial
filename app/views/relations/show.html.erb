@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Algorithms:</strong>
+  <%= @relation.algorithms %>
+</p>
+
+<p>
+  <strong>Inventor:</strong>
+  <%= @relation.inventor %>
+</p>
+
+<%= link_to 'Edit', edit_relation_path(@relation) %> |
+<%= link_to 'Back', relations_path %>

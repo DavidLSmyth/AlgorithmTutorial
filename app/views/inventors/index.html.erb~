@@ -1,0 +1,29 @@
+<h1>Listing inventors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>About</th>
+      <th>Invention date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @inventors.each do |inventor| %>
+      <tr>
+        <td><%= inventor.name %></td>
+        <td><%= inventor.about %></td>
+        <td><%= inventor.invention_date %></td>
+        <td><%= link_to 'Show', inventor %></td>
+        <td><%= link_to 'Edit', edit_inventor_path(inventor) %></td>
+        <td><%= link_to 'Destroy', inventor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Inventor', new_inventor_path %>

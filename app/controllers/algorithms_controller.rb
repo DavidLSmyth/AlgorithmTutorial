@@ -15,6 +15,7 @@ class AlgorithmsController < ApplicationController
   # GET /algorithms/new
   def new
     @algorithm = Algorithm.new
+		#@inventors = Inventor.all
   end
 
   # GET /algorithms/1/edit
@@ -68,6 +69,6 @@ class AlgorithmsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def algorithm_params
-      params.require(:algorithm).permit(:name, :purpose, :description, :link, :pseudoCode, :complexityAnalysis, :difficulty, :author)
+      params.require(:algorithm).permit(:name, :purpose, :description, :link, :pseudoCode, :complexityAnalysis, :difficulty, :author, :tag_list)
     end
 end

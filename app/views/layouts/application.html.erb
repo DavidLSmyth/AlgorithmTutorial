@@ -1,45 +1,40 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>AlgorithmTutorial</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AlgorithmTutorial</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= javascript_include_tag "application" 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+
+
+
 <%= content_tag :body, class: controller.controller_name do %>
-		<div id="banner" style="height:60px;">
-			<%= @page_title || "BlackBored" %>
-			<%= image_tag "Cog.jpg", :size => "60x60" %>
-<!--
-			<p>
-			<%= link_to "Home", home_link_home_path, class: 'button' %>	
-			</p>
---></div>
-      <div>
-        <nav id="navigationbar">
-          <ul>
-						<li><%= link_to 'Home', home_path %></li>
-            <li><%= link_to 'Algorithms Index', index_path %></li>
-            <li><%= link_to "Edit Algorithms", algorithms_path %></li>
-            <li><%= link_to "Log in", '#' %></li>
-          </ul>
-						<%= form_tag(index_path, :method => "get", id: "search-form") do %>
-						<%= text_field_tag :search, params[:search], placeholder: "Search Algorithms" %>
-						<%= submit_tag "Search" %>
-						<% end %>
-
-        </nav>
-			</div>
-<!--add some style here, possibly-->
-
-   
+<div id="banner" style="height:60px;">
+	<%= @page_title || "BlackBored" %>
+	<%= image_tag "Cog.jpg", :size => "60x60" %>
+</div>
+  <div>
+  	<nav id="navigationbar">
+    	<ul>
+				<li><%= link_to 'Home', home_path %></li>
+ 	      <li><%= link_to 'Algorithms Index', index_path %></li>
+        <li><%= link_to "Edit Algorithms", algorithms_path %></li>
+        <li><%= link_to "Log in", '#' %></li>
+      </ul>
+			<%= form_tag(index_path, :method => "get", id: "search-form") do %>
+			<%= text_field_tag :search, params[:search], placeholder: "Search Algorithms" %>
+			<%= submit_tag "Search" %>
+			<% end %>
+    </nav>
+	</div>
 
   <div id="main">
     <%= yield %>
   </div>
-</div>
 <% end %>
 </body>
 </html>
-

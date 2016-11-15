@@ -1,0 +1,4 @@
+class AddDescriptionToTag < ActiveRecord::Migration
+  def change
+  end
+end

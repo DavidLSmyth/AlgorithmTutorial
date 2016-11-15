@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @inventor.name %>
+</p>
+
+<p>
+  <strong>About:</strong>
+  <%= @inventor.about %>
+</p>
+
+<p>
+  <strong>Invention date:</strong>
+  <%= @inventor.invention_date %>
+</p>
+
+<%= link_to 'Edit', edit_inventor_path(@inventor) %> |
+<%= link_to 'Back', inventors_path %>
