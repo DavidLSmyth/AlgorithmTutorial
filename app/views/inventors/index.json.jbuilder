@@ -1,1 +1,0 @@
-json.array! @inventors, partial: 'inventors/inventor', as: :inventor

@@ -51,10 +51,18 @@
 .tag:hover::after {
    border-left-color: crimson; 
 }
+pre{
+	text-align: left;
+	background: white;
+	font-size: 13px;
+}
 </style>
+
 <body>
 <h1><%= @tag.name %></h1>
-<div><%= @tag.description %></div>
+<pre>
+<%= @tag.description %>
+</pre>
 <br>
 <br>
 <h2>Algorithms which have been tagged with <%= @tag.name %>:</h2>

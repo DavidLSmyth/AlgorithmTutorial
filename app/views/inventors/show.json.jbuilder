@@ -1,1 +1,0 @@
-json.partial! "inventors/inventor", inventor: @inventor

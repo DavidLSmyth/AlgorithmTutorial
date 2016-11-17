@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
   resources :relations
 
-  resources :inventors
-
   get 'home_link/home'
 
   get 'algorithm/index'

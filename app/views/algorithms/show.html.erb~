@@ -36,9 +36,6 @@
 </center>
 <br>
 </br>
-
-
-
 <h2>
   <strong><center>Description:</center></strong>
 </h2>
@@ -47,10 +44,7 @@
 <pre class="description">
   <%= @algorithm.description %>
 </pre>
-
-
 </p>
-
 <p>
 <center>
 <img src=<%= @algorithm.link %> alt="Smiley face" height="400" width="400">
@@ -66,22 +60,15 @@
   <%= @algorithm.pseudoCode %>
 </code>
 </pre>
-
-
 <h2>
   <strong><center>Complexity Analysis:</center></strong>
 </h2>
 <pre>
   <%= @algorithm.complexityAnalysis %>
 </pre>
-
-
 <h3>
   <strong>Difficulty: </strong><%= @algorithm.difficulty %>
 </h3>
-
-
-
 <h3>
   <strong>Author:</strong>
 	<span class='fancy'>
@@ -91,5 +78,5 @@
 <div><%= render @algorithm.tags %></div>
 
 
-<%= link_to 'Edit', edit_algorithm_path(@algorithm) %> |
+<%= link_to 'Edit', edit_algorithm_path(@algorithm) %>
 <%= link_to 'Back', algorithms_path %>
