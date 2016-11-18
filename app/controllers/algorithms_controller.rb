@@ -10,6 +10,7 @@ class AlgorithmsController < ApplicationController
   # GET /algorithms/1
   # GET /algorithms/1.json
   def show
+
   end
 
   # GET /algorithms/new

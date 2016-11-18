@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161114235229) do
+ActiveRecord::Schema.define(version: 20161118140856) do
 
   create_table "algorithms", force: true do |t|
     t.string   "name"
@@ -24,6 +24,10 @@ ActiveRecord::Schema.define(version: 20161114235229) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "purpose"
+    t.text     "Python"
+    t.text     "Java"
+    t.text     "Cpp"
+    t.text     "Ruby"
   end
 
   create_table "inventors", force: true do |t|

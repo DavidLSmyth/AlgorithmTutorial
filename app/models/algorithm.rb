@@ -1,4 +1,5 @@
 class Algorithm < ActiveRecord::Base
+	ALGORITHM_LANGUAGES=["pseudoCode","Python","Cpp","Java","Ruby"]
   acts_as_taggable
 	validates :name, :description, :link, :author, presence: true
 	#ensure each algorithm has a unique name

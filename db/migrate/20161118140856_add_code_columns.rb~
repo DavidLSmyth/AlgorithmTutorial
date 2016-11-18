@@ -1,0 +1,8 @@
+class AddCodeColumns < ActiveRecord::Migration
+  def change
+		add_column :algorithms, :Python	
+		add_column :algorithms, :Java	
+		add_column :algorithms, :Cpp	
+		add_column :algorithms, :Ruby	
+  end
+end
