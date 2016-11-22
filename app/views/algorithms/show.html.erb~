@@ -63,10 +63,10 @@
 <pre class="prettyprint">
 <code>
 	<div id="pseudoCode"><%= @algorithm.pseudoCode %></div>
-	<div id="Python" style='display:none;'><%= @algorithm.Python %></div>
-	<div id="Cpp" style='display:none;'><%= @algorithm.Cpp %></div>
-	<div id="Java" style='display:none;'><%= @algorithm.Java %></div>
-	<div id="Ruby" style='display:none;'><%= @algorithm.Ruby %></div>
+	<div id="Python" style='display:none; float: left'><%= @algorithm.Python %></div>
+	<div id="Cpp" style='display:none; float: left'><%= @algorithm.Cpp %></div>
+	<div id="Java" style='display:none; float: left'><%= @algorithm.Java %></div>
+	<div id="Ruby" style='display:none; float: left'><%= @algorithm.Ruby %></div>
 </code>
 </pre>
 
@@ -88,7 +88,7 @@
 		<%= @algorithm.author %>
 	</span>
 </h3>
-<div style="font-size: 18px; background-color: DarkBlue"><%= render @algorithm.tags %></div>
+<div style="font-size: 18px;"><%= render @algorithm.tags %></div>
 
 
 <%= link_to 'Edit', edit_algorithm_path(@algorithm) %>

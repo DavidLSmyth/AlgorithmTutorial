@@ -35,7 +35,7 @@ table tr, table th {
         <td class='list_actions'>
   	<%= link_to 'Show', algorithm %><br/>
   	<%= link_to 'Edit', edit_algorithm_path(algorithm) %><br/>
-  	<%= link_to 'Delete', algorithms, method: :delete, 
+  	<%= link_to 'Delete', algorithm, method: :delete, 
       	data: { confirm: 'Are you sure?' } %>
 </td>
       </tr>

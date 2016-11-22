@@ -38,3 +38,4 @@ gem 'acts-as-taggable-on'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+gem 'seed_dump'
