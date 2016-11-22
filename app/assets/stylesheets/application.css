@@ -15,6 +15,9 @@
  *= require foundation_and_overrides
 
  */
+body{
+	background: url("graphy.png");
+}
 #banner {
   background: #FFB2B2;
   padding: 20px;
@@ -64,3 +67,5 @@
 		  background-color: #4CAF50;
 	}
 }
+
+

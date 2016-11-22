@@ -15,6 +15,9 @@
  *= require foundation_and_overrides
 
  */
+body{
+	background: url("background4.png");
+}
 #banner {
   background: #FFB2B2;
   padding: 20px;
@@ -22,7 +25,7 @@
 	border-left: 3px solid;
 	border-right: 3px solid;
   font: small-caps 40px/40px "Times New Roman", serif;
-  color: #111369;
+  color: #282;
   text-align: center;
   max-width: 1200px;
   max-height: 300px;
@@ -64,3 +67,5 @@
 		  background-color: #4CAF50;
 	}
 }
+
+

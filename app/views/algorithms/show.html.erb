@@ -26,6 +26,7 @@
 
 <br>
 </br>
+
 <center>
 <h2>
   <strong>Purpose:</strong>
@@ -34,49 +35,60 @@
 	</span>
 </h2>
 </center>
+
 <br>
 </br>
 <h2>
   <strong><center>Description:</center></strong>
 </h2>
-<p>
 
+<p>
 <pre class="description">
   <%= @algorithm.description %>
 </pre>
 </p>
+
 <p>
 <center>
 <img src=<%= @algorithm.link %> alt="Smiley face" height="400" width="400">
 </center>
 </p>
 
-<%= select_tag :code_language, options_for_select(Algorithm::ALGORITHM_LANGUAGES), :id => "code_language" %>
 
-<h2>
-  <strong><center>Pseudocode:</center></strong>
+<h2 style="display: inline;">
+  <strong><center>Pseudocode: <%= select_tag :code_language, options_for_select(Algorithm::ALGORITHM_LANGUAGES), :id => "code_language",:htm => { :style => 'display: inline;' } %></center></strong>
 </h2>
+
+
 <pre class="prettyprint">
 <code>
-	<div id="text_to_be_changed"><%= @algorithm.Python %></div>
+	<div id="pseudoCode"><%= @algorithm.pseudoCode %></div>
+	<div id="Python" style='display:none;'><%= @algorithm.Python %></div>
+	<div id="Cpp" style='display:none;'><%= @algorithm.Cpp %></div>
+	<div id="Java" style='display:none;'><%= @algorithm.Java %></div>
+	<div id="Ruby" style='display:none;'><%= @algorithm.Ruby %></div>
 </code>
 </pre>
+
 <h2>
   <strong><center>Complexity Analysis:</center></strong>
 </h2>
-<pre>
+
+<pre class="description">
   <%= @algorithm.complexityAnalysis %>
 </pre>
+<br></br>
 <h3>
-  <strong>Difficulty: </strong><%= @algorithm.difficulty %>
+  <strong>Author's Difficulty: </strong><%= @algorithm.difficulty %>
 </h3>
+
 <h3>
   <strong>Author:</strong>
 	<span class='fancy'>
 		<%= @algorithm.author %>
 	</span>
 </h3>
-<div><%= render @algorithm.tags %></div>
+<div style="font-size: 18px;"><%= render @algorithm.tags %></div>
 
 
 <%= link_to 'Edit', edit_algorithm_path(@algorithm) %>
@@ -86,12 +98,44 @@
 <script>
 $(document).ready(function(){
     $('#code_language').change(function() {
-				var mystring="<\%= escape_javascript @algorithm."+"pseudoCode"+" \%>";
-				console.log(mystring);
-				var x=$(this).val();
-				console.log(x)
-				console.log("<%= escape_javascript @algorithm.pseudoCode %>");
-        $('#text_to_be_changed').html("<%= escape_javascript @algorithm.pseudoCode %>");
+			console.log(this.value)
+      if(this.value == 'pseudoCode'){
+				console.log('logged'+this.value)
+        $("#pseudoCode").show();
+				$("#Python").hide();
+				$("#Java").hide();
+				$("#Cpp").hide();
+				$("#Ruby").hide();
+      }
+      else if(this.value == 'Python'){
+				console.log('now logged'+this.value)
+        $("#pseudoCode").hide();
+				$("#Python").show();
+				$("#Java").hide();
+				$("#Cpp").hide();
+				$("#Ruby").hide();
+      }
+			else if(this.value == 'Java'){
+				$("#pseudoCode").hide();
+				$("#Python").hide();
+				$("#Java").show();
+				$("#Cpp").hide();
+				$("#Ruby").hide();
+			}
+			else if(this.value == 'Cpp'){
+				$("#pseudoCode").hide();
+				$("#Python").hide();
+				$("#Java").hide();
+				$("#Cpp").show();
+				$("#Ruby").hide();
+			}
+			else if(this.value == 'Ruby'){
+				$("#pseudoCode").hide();
+				$("#Python").hide();
+				$("#Java").hide();
+				$("#Cpp").hide();
+				$("#Ruby").show();
+			}
     });
 });
 </script>

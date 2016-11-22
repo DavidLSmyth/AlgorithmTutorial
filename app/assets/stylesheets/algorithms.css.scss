@@ -20,22 +20,30 @@
   }
 }
 pre{
-	background: white;
-	background-color: white; 
-	white-space: pre-wrap;       /* Since CSS 2.1 */
-  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-  white-space: -pre-wrap;      /* Opera 4-6 */
-  white-space: -o-pre-wrap;    /* Opera 7 */
-  word-wrap: break-word;		
-}
-pre.description{
-	background: white;
-	background-color: white; 
+  background: rgba(252, 252, 252, 0.7);
 	white-space: pre-wrap;       /* Since CSS 2.1 */
   white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
   white-space: -pre-wrap;      /* Opera 4-6 */
   white-space: -o-pre-wrap;    /* Opera 7 */
   word-wrap: break-word;	
+  border: 2px solid green	
+}
+#Java,#Python,#Ruby,#pseudoCode,#Cpp{
+  background: rgba(252, 252, 252, 0.7);
+	white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;
+}
+pre.description{
+	background: rgba(252, 252, 252, 0.7);
+	white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;
+  border: 2px solid green	
 }
 
 pre.prettyprint{

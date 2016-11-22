@@ -23,19 +23,19 @@ table tr, table th {
     <% @algorithms.each do |algorithm| %>
       <tr>
         <td class="border_bottom"><%= algorithm.name %></td>
-		<td class="border_bottom"><%= algorithm.purpose %></td>
+				<td class="border_bottom"><%= algorithm.purpose %></td>
         <td class="border_bottom"><%= algorithm.description[0...100] %>...</td>
         <td class="border_bottom"><%= algorithm.link %></td>
         <td class="border_bottom"><%= algorithm.pseudoCode[0...100] %>...</td>
         <td class="border_bottom"><%= algorithm.complexityAnalysis[0...100] %>...</td>
         <td class="border_bottom"><%= algorithm.difficulty %></td>
         <td class="border_bottom"><%= algorithm.author %></td>
-	<h1>Algorithms</h1>
+	<!--<h1>Algorithms</h1>-->
 	<!--<%= render @algorithms %>-->
         <td class='list_actions'>
-  			<%= link_to 'Show', algorithm %><br/>
-  			<%= link_to 'Edit', edit_algorithm_path(algorithm) %><br/>
-  			<%= link_to 'Destroy', algorithm, method: :delete, 
+  	<%= link_to 'Show', algorithm %><br/>
+  	<%= link_to 'Edit', edit_algorithm_path(algorithm) %><br/>
+  	<%= link_to 'Delete', algorithms, method: :delete, 
       	data: { confirm: 'Are you sure?' } %>
 </td>
       </tr>

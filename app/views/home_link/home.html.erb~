@@ -12,8 +12,8 @@
 	}
 </style>
 <h1>Welcome!</h1>
-<p>Welcome to the home page of the Algorithm Tutorial site. The plan is for this site contain interesting articles regarding computer science and mathematics. It is targeted towards anyone who is interested in implementing and understanding algorithms. The site has an index listing every available algorithm. If you would like to contribute, contact d.smyth10@nuigalway.ie Happy browsing! </p>
+<p style="font-size: 18px;">Welcome to the home page of the Algorithm Tutorial site. The plan is for this site contain interesting articles regarding computer science and mathematics. It is targeted towards anyone who is interested in implementing and understanding algorithms. The site has an index listing every available algorithm. If you would like to contribute, contact d.smyth10@nuigalway.ie Happy browsing! </p>
 
-<p><h3>Algorithm of the Day: <%= link_to Algorithm.find((Time.now.strftime("%d%m%Y").to_i%Algorithm.count)+1).name, algorithm_path(Algorithm.find(Time.now.strftime("%d%m%Y").to_i%7)) %> </h3>
+<p><h3>Algorithm of the Day: <%= link_to Algorithm.find((Time.now.strftime("%d%m%Y").to_i%Algorithm.count)+1).name, algorithm_path(Algorithm.find((Time.now.strftime("%d%m%Y").to_i%Algorithm.count)+1)) %> </h3>
 
 </p>
